@@ -19,7 +19,7 @@ export class AppService{
   }
 
   getAddress(city): Observable <any> {
-    const url:string = "http://localhost:8000/api/getLocationGeoCodes/"+city;
+    const url:string = "/api/getLocationGeoCodes/"+city;
     return this.http.get(url).map(res=>{
       let rsp = res.json();
       this.appModel.pplLocationDetailsFromCity(rsp[0]);
@@ -27,7 +27,7 @@ export class AppService{
   }
 
   getWeatherInfo(latitude: any, longitude: any): Observable<any> {
-    const weatherUrl: string = "http://localhost:8000/api/getWeatherForLocation/"+latitude+'/'+longitude;
+    const weatherUrl: string = "/api/getWeatherForLocation/"+latitude+'/'+longitude;
     return this.http.get(weatherUrl).map(res=>{
       this.appModel.pplWeatherData(res.json());
     });
