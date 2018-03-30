@@ -1,0 +1,40 @@
+.hero {
+  background: url(./../../assets/images/banner.png);
+  background-size: cover;
+  padding: 70px 0;
+  min-height: 350px;
+}
+
+.find-location {
+  position: relative;
+  margin-bottom: 70px;
+  opacity: 0.85;
+}
+
+.find-location input[type="text"] {
+  width: 94%;
+  padding: 20px 50px 20px 30px;
+  background: #1e202b;
+  color: white;
+}
+
+.find-location input[type="submit"], .find-button {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  bottom: 5px;
+  padding: 0 40px;
+}
+
+.forecast-container {
+  background: #323544;
+  display: table;
+  table-layout: fixed;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  opacity: 0.85;
+  float: left;
+  width: 100%;
+}
+

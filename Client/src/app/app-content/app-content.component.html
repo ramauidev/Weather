@@ -1,0 +1,13 @@
+<div class="forecast-table">
+  <div class="hero">
+    <div class="container">
+      <form class="find-location" [formGroup]="locationForm">
+        <input type="text" placeholder="Find your location..." formControlName="location">
+        <button (click)="submit(locationForm.value.location);" class="find-button">Find</button>
+      </form>
+    </div>
+    <div class="forecast-container">
+      <app-forecast-details [dayData]="day" *ngFor="let day of dailyData" [activeDay]="activeDay"  (changeActiveDate)="changeDate($event)"></app-forecast-details>
+    </div>
+  </div>
+</div>

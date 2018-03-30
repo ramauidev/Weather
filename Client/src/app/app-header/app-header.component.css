@@ -1,0 +1,70 @@
+.site-header {
+  padding: 50px 0;
+}
+
+.site-header .container{
+  margin-top: -30px;
+}
+
+.site-header .branding {
+  float: left;
+}
+
+.site-header .branding .logo, .site-header .branding .logo-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.site-header .branding .logo {
+  margin-right: 10px;
+}
+
+.site-header .branding .site-title {
+  margin-bottom: 5px;
+  font-size: 1.1428571429em;
+  color: white;
+}
+
+.site-header .branding .site-description {
+  font-size: 0.7142857143em;
+  display: block;
+  color: #bfc1c8;
+}
+
+.main-navigation {
+  float: right;
+}
+
+.main-navigation .menu {
+  list-style: none;
+  display: inline-block;
+  *zoom: 1;
+}
+
+.main-navigation .menu:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+.main-navigation .menu .menu-item {
+  float: left;
+  margin-left: 10px;
+}
+
+.main-navigation .menu .menu-item a {
+  padding: 5px 25px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  font-weight: 400;
+}
+
+.main-navigation .menu .menu-item.current-menu-item a, .main-navigation .menu .menu-item:hover a {
+  border-color: #009ad8;
+  color: #009ad8;
+}

@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  font-size: 14px; }
+
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b;
+}
+
+.button, form input[type="submit"], form button, form input[type="reset"] {
+  border: none;
+  background: #009ad8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}

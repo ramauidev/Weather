@@ -1,0 +1,28 @@
+
+<div class="forecast" [ngClass]="{'today': activeDayFlag}" (click)="setActiveDay(dayData)">
+  <div class="forecast-header">
+    <div class="day">{{weatherDay}}</div>
+    <div class="date" *ngIf="activeDayFlag">{{weatherDate}}</div>
+  </div>
+  <div class="forecast-content" *ngIf="activeDayFlag">
+    <div class="location" *ngIf="location">{{location.city}},{{location.region_code}}</div>
+    <div class="degree">
+      <div class="num">{{dayData.temperatureHigh}}<sup>o</sup>C</div>
+      <div class="forecast-icon">
+        <img src="{{imgSrc}}" alt="" width=90>
+      </div>
+    </div>
+    <div>
+      <span><img src="assets/images/icon-umberella.png" alt="">20%</span>
+      <span><img src="assets/images/icon-wind.png" alt="">{{dayData.windSpeed}}km/h</span>
+      <span><img src="assets/images/icon-compass.png" alt="">{{dayData.visibility}}</span>
+    </div>
+  </div>
+  <div class="forecast-content" *ngIf="!activeDayFlag">
+    <div class="forecast-icon">
+      <img src="{{imgSrc}}" alt="" width=48>
+    </div>
+    <div class="degree">{{dayData.temperatureHigh}}<sup>o</sup>C</div>
+    <small>{{dayData.temperatureLow}}<sup>o</sup></small>
+  </div>
+</div>
