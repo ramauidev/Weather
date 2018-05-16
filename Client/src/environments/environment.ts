@@ -5,5 +5,6 @@
 
 export const environment = {
   production: false,
-  requestUrl: 'http://localhost:8000'
+  requestUrl: 'http://localhost:8000',
+  googleApiKey: ''/*your google API Key */
 };

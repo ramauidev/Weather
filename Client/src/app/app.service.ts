@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs/observable';
+import {Observable} from 'rxjs/Observable';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {AppModel} from "./app.model";
