@@ -8,8 +8,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const googleClient = googleMaps.createClient({key: 'AIzaSyA1zwxDJ56xmQ0IUqMklVdX6lDexQbHOCs'});
-DarkSkyApi.apiKey = '41bd4746730ccac531819aba91d6e860';
+const googleClient = googleMaps.createClient({key: ''}); //google API Key.
+DarkSkyApi.apiKey = ''; //darkskyp API Key
 DarkSkyApi.proxy = true;
 
 
