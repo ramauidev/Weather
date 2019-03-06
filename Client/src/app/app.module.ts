@@ -11,8 +11,6 @@ import { HttpClientModule} from "@angular/common/http";
 import {HttpModule} from "@angular/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AppModel} from "./app.model";
-import {AgmCoreModule} from "@agm/core";
-import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -26,11 +24,7 @@ import {environment} from '../environments/environment';
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    AgmCoreModule.forRoot({
-      apiKey: environment.googleApiKey,
-      libraries: ['places']
-    })
+    ReactiveFormsModule
   ],
   providers: [AppService, AppModel],
   bootstrap: [AppComponent]

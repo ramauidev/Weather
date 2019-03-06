@@ -5,15 +5,9 @@
         <input type="text" placeholder="Find your location..." formControlName="location">
         <button (click)="submit(locationForm.value.location);" class="find-button">Find</button>
       </form>
-      <!--<input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">-->
     </div>
     <div class="forecast-container">
       <app-forecast-details [dayData]="day" *ngFor="let day of dailyData" [activeDay]="activeDay"  (changeActiveDate)="changeDate($event)"></app-forecast-details>
     </div>
   </div>
 </div>
-
-<agm-map [latitude]="locationDetails.latitude" [longitude]="locationDetails.longitude" *ngIf="locationDetails">
-  <agm-marker [latitude]="locationDetails.latitude" [longitude]="locationDetails.longitude"></agm-marker>
-</agm-map>
-
