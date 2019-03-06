@@ -9,6 +9,7 @@ import {MapsAPILoader, } from "@agm/core";
   templateUrl: './app-content.component.html',
   styleUrls: ['./app-content.component.css']
 })
+// for git revert testing only.
 export class AppContentComponent implements OnInit {
   @ViewChild('search')
   public searchElementRef: ElementRef;
